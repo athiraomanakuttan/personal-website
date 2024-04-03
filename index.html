@@ -11,7 +11,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <!-- ------------------------- Css File -------------------  -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- ----------------------- Ajax -------------------  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Web Design Mastery | Athira omanakuttan</title>
   </head>
   <body>
@@ -43,7 +46,7 @@
       </nav>
       <div class="section__container header__container" id="home">
         <div class="header__image">
-          <img src="assets/pro-img.png" alt="header" />
+          <img src="assets/img-hero.png" alt="header" />
         </div>
         <div class="header__content">
           <h4>Mastering pixels and code.</h4>
@@ -192,14 +195,15 @@
     <section class="section__container contact__container" id="contact">
       <p class="section__subheader">Contact Us</p>
       <h2 class="section__header">Get In Touch</h2>
-      <form action="/" class="contact__form">
+      <form  id="submit-form" action="" class="contact__form">
         <div class="input__row">
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
+          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+          
+          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
         </div>
-        <input type="text" placeholder="Email" />
-        <input type="text" placeholder="Description" />
-        <button class="btn">Submit</button>
+        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+        <input type="text" name="message" placeholder="Message" required />
+        <button type="submit" class="btn">Submit</button>
       </form>
     </section>
 
@@ -228,7 +232,7 @@
         </div>
         <div class="footer__col">
           <h4>Support</h4>
-          <div class="foo ter__links">
+          <div class="footer__links">
             <a href="#">Contact</a>
             <a href="#">Privacy Policy</a>
           </div>
@@ -238,10 +242,11 @@
         Copyright © 2023 Web Design Mastery. All rights reserved.
       </div>
     </footer>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
